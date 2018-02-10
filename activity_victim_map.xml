@@ -1,0 +1,136 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.ghr.VictimMapActivity"
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="3"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="5">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/logout"
+                android:text="Log Out"
+                android:layout_weight="1"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/hospital"
+                android:text="Hospitals"
+                android:layout_weight="1"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/setting"
+                android:text="Settings"
+                android:layout_weight="1"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/info"
+                android:text="Info"
+                android:layout_weight="1"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/camera"
+                android:text="Camera"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom"
+            android:id="@+id/ambulance_info"
+            android:background="@android:color/white"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                android:id="@+id/ambulanceProfileImage"
+                android:src="@mipmap/ic_launcher_user"
+                android:padding="20sp"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="40sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ambulanceName"
+                    android:paddingBottom="10sp"
+                    android:paddingTop="20sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ambulancePhone"
+                    android:paddingBottom="10sp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ambulanceNo"
+                    android:paddingBottom="10sp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ambulanceHospital"
+                    android:paddingBottom="10sp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RadioGroup
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:weightSum="2"
+             android:orientation="horizontal"
+             android:id="@+id/radioGroup">
+
+         <RadioButton
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="Stranger"
+             android:id="@+id/radio_stranger"
+             android:layout_weight="1" />
+         <RadioButton
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="Self"
+             android:id="@+id/radio_self"
+             android:checked="true"
+             android:layout_weight="1"/>
+         </RadioGroup>
+
+
+        <Button
+        android:id="@+id/request"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:text="Call Ambulance"
+        android:layout_weight="1" />
+    </LinearLayout>
+</FrameLayout>

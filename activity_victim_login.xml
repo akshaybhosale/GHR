@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context="com.example.admin.ghr.VictimLoginActivity"
+    android:background="@drawable/sign_back">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/its_all_life"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/login_image"
+        android:layout_gravity="center"
+        android:layout_marginTop="55dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rect"
+        android:layout_gravity="center"
+        android:hint="Email"
+        android:id="@+id/victim_email"
+        android:layout_marginTop="50dp"
+        android:paddingLeft="15dp"
+        android:textColorHint="@android:color/white"
+        android:textColor="@android:color/white"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rect"
+        android:layout_gravity="center"
+        android:hint="Password"
+        android:id="@+id/victim_password"
+        android:inputType="textPassword"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="15dp"
+        android:textColorHint="@android:color/white"
+        android:textColor="@android:color/white"/>
+
+    <Button
+        android:id="@+id/victim_login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/signin"
+        />
+
+    <Button
+        android:id="@+id/victim_register_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/register"
+        />
+</LinearLayout>

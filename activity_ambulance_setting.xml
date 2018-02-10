@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20sp"
+    tools:context="com.example.admin.ghr.AmbulanceSettingActivity">
+
+    <ImageView
+        android:layout_width="125sp"
+        android:layout_height="125sp"
+        android:id="@+id/ambulance_profileImage"
+        android:src="@mipmap/ic_launcher_user"
+        android:layout_marginBottom="20sp"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:id="@+id/ambulance_Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:hint="Name"
+        android:layout_marginBottom="20sp"
+        android:textSize="25sp"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/ambulance_Phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:hint="Phone"
+        android:layout_marginBottom="20sp"
+        android:textSize="25sp"
+        android:inputType="phone"/>
+
+
+    <EditText
+        android:id="@+id/ambulance_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:hint="Ambulance Number"
+        android:layout_marginBottom="20sp"
+        android:textSize="25sp"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/ambulance_hospital"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:hint="Hospital"
+        android:layout_marginBottom="20sp"
+        android:textSize="25sp"
+        android:inputType="text"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20sp"
+        android:weightSum="2"
+        android:layout_gravity="bottom">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CONFIRM"
+            android:layout_weight="1"
+            android:id="@+id/ambulance_confirm"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BACK"
+            android:layout_weight="1"
+            android:id="@+id/back"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
